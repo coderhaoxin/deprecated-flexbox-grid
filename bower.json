@@ -15,7 +15,7 @@
   "license": "MIT",
   "private": true,
   "ignore": [
-    "example.html",
+    "example",
     "*.scss",
     "**/.*",
     "*.sh"
