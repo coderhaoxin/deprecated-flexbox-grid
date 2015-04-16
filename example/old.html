@@ -1,91 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>map</title>
   <style type="text/css">
-    .container {
-      width: 45rem;
-      height: 45rem;
+    .row {
       display: -webkit-box;
-      -webkit-box-direction: normal;
-      -webkit-box-orient: vertical;
-    }
-    .box {
-      width: 15rem;
-      height: 15rem;
-      display: -webkit-box;
+      box-sizing: border-box;
       -webkit-box-direction: normal;
       -webkit-box-orient: horizontal;
+      height: 80px;
     }
-    .box1 {
+
+    .row .avatar {
+      display: -webkit-box;
       -webkit-box-ordinal-group: 1;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      background: red;
+      width: 80px;
     }
-    .box2 {
-      -webkit-box-ordinal-group: 3;
+    .row .avatar span {
+      width: 40px;
+      height: 40px;
+      font-size: 32px;
     }
-    .box3 {
+
+    .row .desc {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
       -webkit-box-ordinal-group: 2;
+      background: yellow;
+      width: 160px;
+      font-size: 26px;
     }
-    .item {
-      width: 5rem;
-      height: 5rem;
+    .row .desc .title {
+      display: -webkit-box;
+      -webkit-box-pack: start;
     }
-    .box1 .item1 {
-      -webkit-box-flex-group: 1;
+    .row .desc .info {
+      display: -webkit-box;
+      -webkit-box-pack: end;
+    }
+    .row .desc .address {
+      display: -webkit-box;
+      -webkit-box-pack: start;
+      position: relative;
+      top: -10px;
+    }
+
+    .row .note {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
       -webkit-box-ordinal-group: 3;
+      background: blue;
+      width: 80px;
+      font-size: 12px;
     }
-    .box1 .item2 {
-      -webkit-box-flex-group: 1;
-      -webkit-box-ordinal-group: 2;
+    .row .note .price {
+      display: -webkit-box;
+      -webkit-box-pack: end;
     }
-    .box1 .item3 {
-      -webkit-box-flex-group: 1;
-      -webkit-box-ordinal-group: 1;
+    .row .note .icon {
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      font-size: 32px;
     }
-    .box2 .item1 {
-      -webkit-box-flex-group: 2;
-      -webkit-box-ordinal-group: 2;
-    }
-    .box2 .item2 {
-      -webkit-box-flex-group: 2;
-      -webkit-box-ordinal-group: 3;
-    }
-    .box2 .item3 {
-      -webkit-box-flex-group: 2;
-      -webkit-box-ordinal-group: 1;
-    }
-    .box3 .item1 {
-      -webkit-box-flex-group: 3;
-      -webkit-box-ordinal-group: 3;
-    }
-    .box3 .item2 {
-      -webkit-box-flex-group: 3;
-      -webkit-box-ordinal-group: 1;
-    }
-    .box3 .item3 {
-      -webkit-box-flex-group: 3;
-      -webkit-box-ordinal-group: 2;
+    .row .note .state {
+      display: -webkit-box;
+      -webkit-box-pack: start;
+      padding-top: 15px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="box box1">
-      <span class="item item1">3</span>
-      <span class="item item2">2</span>
-      <span class="item item3">1</span>
+  <h2>old flexbox, for Android 4.1, 4.2</h2>
+  <div class="row">
+    <div class="desc">
+      <div class="title">cici</div>
+      <div class="info">月子</div>
+      <div class="address">呼啦啦</div>
     </div>
-    <div class="box box2">
-      <span class="item item1">8</span>
-      <span class="item item2">9</span>
-      <span class="item item3">7</span>
+    <div class="note">
+      <div class="price">
+        <span>88.88</span>
+      </div>
+      <div class="icon">
+        <span>￥</span>
+      </div>
+      <div class="state">
+        <span>发红包</span>
+      </div>
     </div>
-    <div class="box box3">
-      <span class="item item1">6</span>
-      <span class="item item2">4</span>
-      <span class="item item3">5</span>
+    <div class="avatar">
+      <span>❤</span>
     </div>
   </div>
 </body>
